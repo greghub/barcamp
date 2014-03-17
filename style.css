@@ -2,8 +2,8 @@ body {
 	background: #000;
 }
 
-.logosh-mogosh {
-	width: 210px;
+#logosh-mogosh {
+	width: 294px;
 	height: 257px;
 	background: #5dedc9;	
 	overflow: hidden;
@@ -28,7 +28,7 @@ body {
 	transform:skew(0deg,-30deg); /* Standard syntax */
 }
 
-#mycanvas {
+#canvas {
 	position: absolute;
 	z-index: 99999;
 }
