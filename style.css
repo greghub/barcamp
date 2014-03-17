@@ -1,0 +1,34 @@
+body {
+	background: #000;
+}
+
+.logosh-mogosh {
+	width: 210px;
+	height: 257px;
+	background: #5dedc9;	
+	overflow: hidden;
+}
+
+.row div {
+	width: 21px;
+	height: 17px;
+	float: left;	
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background: #000;
+	-ms-transform:skew(0deg,30deg); /* IE 9 */
+	-webkit-transform:skew(0deg,30deg); /* Chrome, Safari, Opera */
+	transform:skew(0deg,30deg); /* Standard syntax */
+}
+
+.odd-row div:nth-child(2n+1), .even-row div:nth-child(2n) {
+	background: #dcff48;	
+	-ms-transform:skew(0deg,-30deg); /* IE 9 */
+	-webkit-transform:skew(0deg,-30deg); /* Chrome, Safari, Opera */
+	transform:skew(0deg,-30deg); /* Standard syntax */
+}
+
+#mycanvas {
+	position: absolute;
+	z-index: 99999;
+}
