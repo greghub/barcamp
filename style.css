@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('fonts/CenturyGothic.eot?') format('eot'), 
+	     url('fonts/CenturyGothic.woff') format('woff'), 
+	     url('fonts/CenturyGothic.ttf')  format('truetype'),
+	     url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+}
+
+@font-face {
+	font-family: 'CenturyGothic-Bold';
+	src: url('fonts/CenturyGothic-Bold.eot?') format('eot'), 
+	     url('fonts/CenturyGothic-Bold.woff') format('woff'), 
+	     url('fonts/CenturyGothic-Bold.ttf')  format('truetype'),
+	     url('fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'ds-digib';
+  src: url('fonts/ds-digib.eot');
+  src: url('fonts/ds-digib.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ds-digib.woff') format('woff'),
+       url('fonts/ds-digib.ttf') format('truetype'),
+       url('fonts/ds-digib.svg#ds-digib') format('svg');
+}
+
+body {
+	background: #000;
+}
+
+#logosh-mogosh {
+	width: 294px;
+	height: 257px;
+	background: #5dedc9;	
+	overflow: hidden;	
+	float: left;
+}
+
+.row div {
+	width: 21px;
+	height: 17px;
+	float: left;	
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background: #000;
+	-ms-transform:skew(0deg,30deg); /* IE 9 */
+	-webkit-transform:skew(0deg,30deg); /* Chrome, Safari, Opera */
+	transform:skew(0deg,30deg); /* Standard syntax */
+}
+
+.odd-row div:nth-child(2n+1), .even-row div:nth-child(2n) {
+	background: #dcff48;	
+	-ms-transform:skew(0deg,-30deg); /* IE 9 */
+	-webkit-transform:skew(0deg,-30deg); /* Chrome, Safari, Opera */
+	transform:skew(0deg,-30deg); /* Standard syntax */
+}
+
+#canvas {
+	position: absolute;
+	z-index: 99999;
+}
+
+.barcamp {
+	color: white;
+	font-family: 'CenturyGothic';
+	font-size: 198px;
+	line-height: 80px;
+	float: left;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+.barcamp .bar {
+	font-family: 'CenturyGothic-Bold';	
+}
+
+.barcamp .camp {
+	margin-left: -10px;
+	letter-spacing: -10px;
+}
+
+.yerevan {
+	text-align: right;
+	font-size: 52px;
+	line-height: 60px;
+	color: #dbff30;
+	font-family: 'ds-digib';	
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+	zoom: 0.8;
+	width: 1176px;
+	margin: 10% auto;
+}
